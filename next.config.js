@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: process.env.NEXT_OUTPUT,
 
   webpack(config) {
     config.module.rules.push({
