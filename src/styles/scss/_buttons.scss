@@ -1,11 +1,44 @@
+@use "mixins";
+
 .btn {
   display: inline-flex;
+  gap: 12px;
   align-items: center;
   height: 56px;
   padding: 0 24px;
   border-radius: 48px;
-  background-color: #6C7893;
+  background-color: #00aeef;
   color: white;
+
+  @include mixins.lg {
+    padding: 0 18px;
+    height: 40px;
+    gap: 8px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  path {
+    transition: 350ms;
+  }
+
+  &:hover {
+    color: #00aeef;
+    background-color: #fff;
+
+    path {
+      fill: #00aeef;
+    }
+  }
+
+  &.outline {
+    background-color: transparent;
+    border: 1px solid #00aeef;
+    color: #fff;
+  }
 }
 
 a {

@@ -10,6 +10,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #011B59;
+}
+
 body,
 html {
   overflow-x: clip;
@@ -73,7 +77,7 @@ dialog {
 
 @include mixins.sm {
   .col-12 {
-    padding: 0 24px;
+    padding: 0 24px !important;
     text-align: center;
   }
 }
