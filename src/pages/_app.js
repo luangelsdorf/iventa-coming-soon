@@ -1,6 +1,6 @@
 import '@/styles/style.scss';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import { Montserrat } from '@next/font/google';
+import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
   weight: ['500', '600'],
