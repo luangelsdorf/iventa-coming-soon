@@ -1,7 +1,7 @@
 @use "mixins";
 
 :root {
-  font-weight: 500;
+  font-family: "aktiv-grotesk", sans-serif;
   font-size: 20px;
   line-height: 36px;
   color: #fff;
@@ -12,7 +12,8 @@
 }
 
 strong {
-  color: #00AEEF;
+  color: #00aeef;
+  font-weight: 500;
 }
 
 p,
