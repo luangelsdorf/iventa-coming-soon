@@ -1,13 +1,13 @@
 @use "mixins";
 
 :root {
-  font-family: "aktiv-grotesk", sans-serif;
   font-size: 20px;
   line-height: 36px;
   color: #fff;
 
   @include mixins.lg {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 32px;
   }
 }
 

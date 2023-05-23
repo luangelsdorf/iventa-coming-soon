@@ -20,25 +20,6 @@
       height: 18px;
     }
   }
-
-  path {
-    transition: 350ms;
-  }
-
-  &:hover {
-    color: #00aeef;
-    background-color: #fff;
-
-    path {
-      fill: #00aeef;
-    }
-  }
-
-  &.outline {
-    background-color: transparent;
-    border: 1px solid #00aeef;
-    color: #fff;
-  }
 }
 
 a {
@@ -47,5 +28,8 @@ a {
   color: inherit;
   transition: all 350ms;
   position: relative;
-  font-weight: 600;
+
+  path, rect {
+    transition: 350ms;
+  }
 }

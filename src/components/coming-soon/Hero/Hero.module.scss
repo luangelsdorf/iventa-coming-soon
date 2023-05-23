@@ -1,34 +1,33 @@
-@use 'src/styles/scss/_mixins';
+@use "src/styles/scss/_mixins";
 
 .section {
 }
 
 .textContent {
   & > p {
-    &:first-of-type {
-      margin-bottom: 24px;
-    }
-    &:last-of-type {
-      margin-bottom: 40px;
-    }
+    color: rgb(var(--myrtille));
+    margin-bottom: 48px;
   }
 
   h1 {
     margin-bottom: 48px;
     font-size: 96px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 112px;
+    color: rgb(var(--berry));
   }
 
-  @include mixins.lg {
+  @include mixins.xxl {
+    h1 {
+      font-size: 72px;
+      line-height: 80px;
+    }
+  }
+
+  @include mixins.xl {
     h1 {
       font-size: 56px;
-      line-height: 72px;
-    }
-
-    svg {
-      height: 18px;
-      width: 18px;
+      line-height: 64px;
     }
   }
 }
@@ -38,28 +37,54 @@
   gap: 24px;
 
   a {
-    color: #00AEEF;
-
     &:hover {
-      color: #fff;
+      rect {
+        fill: rgb(var(--leaf));
+      }
+      path {
+        fill: rgb(var(--acid));
+      }
     }
   }
 
   @include mixins.lg {
     justify-content: center;
   }
+
+  @include mixins.sm {
+    justify-content: space-between;
+    gap: 0;
+  }
 }
 
-.video {
-  video {
+.image {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  .mobi {
+    display: none;
+  }
+
+  .desk {
+    border-radius: 48px;
     width: 100%;
-    height: 622px;
-    object-fit: contain;
-    
-    @include mixins.lg {
-      height: 488px;
-      padding-top: 64px;
-      padding-bottom: 24px;
+    height: calc(100vh - 88px);
+  }
+
+  @include mixins.lg {
+    height: auto;
+    margin-top: 48px;
+    justify-content: center;
+
+    .mobi {
+      display: block;
+      border-radius: 24px;
+      max-width: 100%;
+    }
+
+    .desk {
+      display: none;
     }
   }
 }

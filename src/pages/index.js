@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Em Breve | Abarca</title>
-        <meta name="description" content="Nos acompanhe nas redes sociais e fique sabendo em primeira mão sobre os novos rumos da Abarca. Vem navegar com a gente!" />
+        <title>Em Breve | IVenta</title>
+        <meta name="description" content="Nos acompanhe nas redes sociais e fique sabendo em primeira o que está por vir." />
         <link rel="icon" href="/images/icon.svg" />
       </Head>
 

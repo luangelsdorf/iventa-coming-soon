@@ -1,9 +1,9 @@
 import '@/styles/style.scss';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
-import { Montserrat } from "next/font/google";
+import { Mitr } from "next/font/google";
 
-const montserrat = Montserrat({
-  weight: ['500', '600'],
+const mitr = Mitr({
+  weight: ['400', '500'],
   subsets: ['latin'],
 });
 
@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
     <>
       <style jsx global>{`
         html {
-          font-family: ${montserrat.style.fontFamily};
+          font-family: ${mitr.style.fontFamily};
         }
       `}</style>
       <Component {...pageProps} />
